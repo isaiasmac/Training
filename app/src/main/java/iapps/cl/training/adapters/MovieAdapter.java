@@ -58,16 +58,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     public class MovieViewHolder extends RecyclerView.ViewHolder{
         ImageView coverImageView;
-        TextView favoritesCount;
+        TextView nameMovie;
 
         public MovieViewHolder(View itemView) {
             super(itemView);
             coverImageView = (ImageView) itemView.findViewById(R.id.coverImageView);
-            favoritesCount = (TextView) itemView.findViewById(R.id.favoritesCount);
+            nameMovie = (TextView) itemView.findViewById(R.id.nameMovie);
         }
 
         public void bindMovie(Movie movie){
-            favoritesCount.setText(movie.getName());
+            nameMovie.setText(movie.getName());
         }
     }
 
